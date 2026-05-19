@@ -6,85 +6,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animesh Chauhan | Software Engineer</title>
   <meta name="description"
-    content="Portfolio of Animesh Chauhan, Software Engineer focusing on Backend Development, Java, and Scalable Systems.">
+    content="Portfolio of Animesh Chauhan — Software Engineer specializing in Backend Development, Java, and Scalable Systems.">
 
-  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Custom CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Custom Cursor Elements Removed per user request -->
-
-  <!-- Scroll Progress Indicator -->
+  <!-- Scroll Progress -->
   <div class="scroll-progress-container">
     <div class="scroll-progress-bar" id="scroll-bar"></div>
   </div>
 
   <!-- Navigation -->
-  <nav>
+  <nav id="main-nav">
     <div class="nav-content">
-      <a href="#hero" class="logo" style="display: flex; align-items: center; text-decoration: none;">
-        <span
-          style="font-size: 2.5rem; font-weight: 800; letter-spacing: -6px; color: var(--text-main); line-height: 1; transform: translateY(-2px);">
-          A<span style="opacity: 0.9; color: var(--accent-2); position: relative; left: -2px;">C</span>
-        </span>
+      <a href="#hero" class="logo">
+        <span class="logo-mark">A<span>C</span></span>
       </a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#experience" id="nav-experience">Experience</a></li>
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#education" id="nav-education">Education</a></li>
+        <li><a href="#contact" id="nav-contact">Contact</a></li>
       </ul>
-      <button class="theme-toggle btn btn-outline" id="theme-btn" aria-label="Toggle Theme"
-        style="padding: 0.5rem 1rem; border-radius: 20px; display: flex; align-items: center; gap: 0.5rem;">
-        <i data-lucide="sun"></i> <span>Light Mode</span>
+      <button class="theme-toggle" id="theme-btn" aria-label="Toggle Theme">
+        <i data-lucide="sun" style="width:15px;height:15px;"></i>
+        <span>Light</span>
       </button>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- ═══════════════ HERO ═══════════════ -->
   <section id="hero" class="hero">
     <div class="hero-bg"></div>
     <div class="container">
+      <div class="hero-badge mono">⚡ Available for opportunities</div>
       <h1 class="hero-title">Hi, I'm <span class="gradient-text">Animesh Chauhan</span></h1>
-      <h2 class="hero-subtitle" id="typewriter-text">Software Engineer | Backend Developer</h2>
+      <h2 class="hero-subtitle" id="typewriter-text"></h2>
       <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Let's Talk →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num" data-target="2">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="10">0</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="5">0</div>
+          <div class="stat-label">Tech Stacks</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="2">0</div>
+          <div class="stat-label">Companies</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- ═══════════════ ABOUT ═══════════════ -->
   <section id="about">
     <div class="container">
-      <h2 class="gsap-reveal">About Me</h2>
+      <h2 class="section-title gsap-reveal">About Me</h2>
       <div class="about-grid">
         <div class="about-text glass gsap-reveal">
-          <p>I am an Engineering Graduate in Electronics & Telecommunication with a strong focus on backend development.
-            I have a deep passion for building scalable, efficient systems that solve real-world problems.</p>
-          <p>Currently working as a Software Engineer, I specialize in creating robust APIs, integrating complex
-            services, and architecting database schemas that power enterprise applications.</p>
+          <p>I'm an <strong>Electronics &amp; Telecommunication</strong> graduate turned backend engineer, passionate
+            about building systems that scale gracefully under pressure.</p>
+          <p>Currently at <strong>VIS Networks Pvt Ltd</strong>, I architect robust APIs, engineer email service
+            integrations, and bridge complex Microsoft Graph API workflows — turning business needs into elegant code.
+          </p>
+          <p>I believe good software is invisible: it just works, fast, reliably, and securely.</p>
         </div>
         <div class="about-cards">
-          <div class="glass about-card gsap-reveal animate-float" style="margin-bottom: 1.5rem;">
+          <div class="glass about-card gsap-reveal animate-float">
             <h3>Current Role</h3>
-            <p style="color: var(--text-main); font-weight: 500;">Software Engineer at VIS Networks Pvt Ltd</p>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">Bhubaneswar, Odisha (Development Dept)</p>
+            <p>Software Engineer</p>
+            <p class="sub">VIS Networks Pvt Ltd · Bhubaneswar, Odisha</p>
           </div>
           <div class="glass about-card gsap-reveal animate-float-delay">
             <h3>Focus Areas</h3>
-            <ul style="color: var(--text-muted); margin-left: 1.2rem; font-size: 0.95rem;">
-              <li>Backend Architecture</li>
-              <li>Graph API Integration</li>
+            <ul class="focus-list">
+              <li>Backend Architecture &amp; APIs</li>
+              <li>Microsoft Graph API Integration</li>
               <li>Email Service Solutions</li>
+              <li>Database Schema Design</li>
             </ul>
           </div>
         </div>
@@ -92,107 +109,103 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- ═══════════════ SKILLS ═══════════════ -->
   <section id="skills">
     <div class="container">
-      <h2 class="gsap-reveal">My Skills</h2>
+      <h2 class="section-title gsap-reveal">My Skills</h2>
       <div class="skills-container">
 
-        <!-- Backend -->
         <div class="glass skill-category gsap-reveal animate-float">
           <h3><i data-lucide="server"></i> Backend</h3>
           <ul class="skill-list">
             <li class="skill-item">
-              <div class="skill-info"><span>Java (Spring, Hibernate)</span> <span>90%</span></div>
+              <div class="skill-info"><span>Java (Spring, Hibernate)</span><span>80%</span></div>
               <div class="progress-bg">
-                <div class="progress-bar" style="width: 90%"></div>
+                <div class="progress-bar" style="width:90%"></div>
               </div>
             </li>
             <li class="skill-item">
-              <div class="skill-info"><span>JDBC / Servlets / JSP</span> <span>85%</span></div>
+              <div class="skill-info"><span>JDBC / Servlets / JSP</span><span>85%</span></div>
               <div class="progress-bg">
-                <div class="progress-bar" style="width: 85%"></div>
+                <div class="progress-bar" style="width:85%"></div>
               </div>
             </li>
             <li class="skill-item">
-              <div class="skill-info"><span>Object-Oriented Design</span> <span>88%</span></div>
+              <div class="skill-info"><span>Object-Oriented Design</span><span>85%</span></div>
               <div class="progress-bg">
-                <div class="progress-bar" style="width: 88%"></div>
+                <div class="progress-bar" style="width:88%"></div>
               </div>
             </li>
           </ul>
         </div>
 
-        <!-- Frontend -->
         <div class="glass skill-category gsap-reveal animate-float-delay">
           <h3><i data-lucide="layout"></i> Frontend</h3>
           <ul class="skill-list">
             <li class="skill-item">
-              <div class="skill-info"><span>HTML / CSS / JS</span> <span>95%</span></div>
+              <div class="skill-info"><span>HTML / CSS / JS</span><span>95%</span></div>
               <div class="progress-bg">
-                <div class="progress-bar" style="width: 95%"></div>
+                <div class="progress-bar" style="width:95%"></div>
               </div>
             </li>
             <li class="skill-item">
-              <div class="skill-info"><span>JavaScript (DOM)</span> <span>80%</span></div>
+              <div class="skill-info"><span>JavaScript (DOM)</span><span>80%</span></div>
               <div class="progress-bg">
-                <div class="progress-bar" style="width: 80%"></div>
+                <div class="progress-bar" style="width:80%"></div>
               </div>
             </li>
             <li class="skill-item">
-              <div class="skill-info"><span>Redis (Caching)</span> <span>70%</span></div>
+              <div class="skill-info"><span>Redis (Caching)</span><span>70%</span></div>
               <div class="progress-bg">
-                <div class="progress-bar" style="width: 70%"></div>
+                <div class="progress-bar" style="width:70%"></div>
               </div>
             </li>
           </ul>
         </div>
 
-        <!-- Database -->
         <div class="glass skill-category gsap-reveal animate-float">
           <h3><i data-lucide="database"></i> Database</h3>
           <ul class="skill-list">
             <li class="skill-item">
-              <div class="skill-info"><span>SQL</span> <span>90%</span></div>
+              <div class="skill-info"><span>SQL / PostgreSQL</span><span>80%</span></div>
               <div class="progress-bg">
-                <div class="progress-bar" style="width: 90%"></div>
+                <div class="progress-bar" style="width:90%"></div>
               </div>
             </li>
             <li class="skill-item">
-              <div class="skill-info"><span>Node.js / Express</span> <span>85%</span></div>
+              <div class="skill-info"><span>Node.js / Express</span><span>85%</span></div>
               <div class="progress-bg">
-                <div class="progress-bar" style="width: 85%"></div>
+                <div class="progress-bar" style="width:85%"></div>
               </div>
             </li>
             <li class="skill-item">
-              <div class="skill-info"><span>DBMS Concepts</span> <span>88%</span></div>
+              <div class="skill-info"><span>DBMS Concepts</span><span>88%</span></div>
               <div class="progress-bg">
-                <div class="progress-bar" style="width: 88%"></div>
+                <div class="progress-bar" style="width:88%"></div>
               </div>
             </li>
           </ul>
         </div>
 
-        <!-- Tools & Concepts -->
         <div class="glass skill-category gsap-reveal animate-float-delay">
-          <h3><i data-lucide="tool"></i> Tools & Concepts</h3>
+          <h3><i data-lucide="wrench"></i> Tools &amp; Concepts</h3>
           <ul class="skill-list">
             <li class="skill-item">
-              <div class="skill-info"><span>Git / GitHub</span> <span>85%</span></div>
+              <div class="skill-info"><span>Git / GitHub</span><span>85%</span></div>
               <div class="progress-bg">
-                <div class="progress-bar" style="width: 85%"></div>
+                <div class="progress-bar" style="width:85%"></div>
               </div>
             </li>
             <li class="skill-item">
-              <div class="skill-info"><span>REST APIs / GraphQL</span> <span>90%</span></div>
+              <div class="skill-info"><span>REST APIs / GraphQL</span><span>90%</span></div>
               <div class="progress-bg">
-                <div class="progress-bar" style="width: 90%"></div>
+                <div class="progress-bar" style="width:90%"></div>
               </div>
             </li>
             <li class="skill-item">
-              <div class="skill-info"><span>DSA & Networking</span> <span>80%</span></div>
+              <div class="skill-info"><span>DSA &amp; Networking</span><span>80%</span></div>
               <div class="progress-bg">
-                <div class="progress-bar" style="width: 80%"></div>
+                <div class="progress-bar" style="width:80%"></div>
               </div>
             </li>
           </ul>
@@ -202,35 +215,37 @@
     </div>
   </section>
 
-  <!-- Experience Section -->
+  <!-- ═══════════════ EXPERIENCE ═══════════════ -->
   <section id="experience">
     <div class="container">
-      <h2 class="gsap-reveal">Experience</h2>
+      <h2 class="section-title gsap-reveal">Experience</h2>
       <div class="timeline">
 
-        <!-- Job 1 -->
         <div class="timeline-item left gsap-timeline-item">
+          <div class="tl-dot"></div>
           <div class="glass timeline-content">
+            <div class="tl-tag">Current · 2025 – Present</div>
             <h3>Software Engineer</h3>
-            <h4>VIS Networks Pvt Ltd | Bhubaneswar</h4>
+            <h4>VIS Networks Pvt Ltd · Bhubaneswar</h4>
             <ul>
-              <li>Leading backend development tasks and ensuring system stability.</li>
-              <li>Successfully integrating Graph API to expand application reach.</li>
-              <li>Creating robust Email service integrations for diverse platform capabilities.</li>
+              <li>Leading backend development tasks ensuring system stability &amp; performance.</li>
+              <li>Successfully integrated Microsoft Graph API to expand application capabilities.</li>
+              <li>Engineered robust Email service integrations for diverse platform use cases.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Job 2 -->
         <div class="timeline-item right gsap-timeline-item">
+          <div class="tl-dot"></div>
           <div class="glass timeline-content">
+            <div class="tl-tag">Apr 2025 – Oct 2025</div>
             <h3>Full Stack Java Developer</h3>
-            <h4>Takira Solutions (P) Ltd. | April 2025 – Oct 2025</h4>
+            <h4>Takira Solutions (P) Ltd.</h4>
             <ul>
-              <li><strong>Project:</strong> DMS-FX4U (Canara Bank)</li>
-              <li>Built Complaint Registration module with full CRUD operations.</li>
-              <li>Engineered scheduler automation via Spring Scheduler and designed transaction alert systems.</li>
-              <li>Developed role-based access control and designed highly efficient DB schemas securely.</li>
+              <li><strong>Project:</strong> DMS-FX4U (Canara Bank) — Built Complaint Registration module with full CRUD.
+              </li>
+              <li>Engineered scheduler automation via Spring Scheduler with transaction alert systems.</li>
+              <li>Developed role-based access control and designed efficient, secure DB schemas.</li>
             </ul>
           </div>
         </div>
@@ -239,39 +254,41 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
   <section id="projects">
     <div class="container">
-      <h2 class="gsap-reveal">Featured Projects</h2>
+      <h2 class="section-title gsap-reveal">Featured Projects</h2>
       <div class="projects-grid">
 
-        <!-- Project 1 -->
-        <div class="glass project-card gsap-reveal animate-float">
+        <div class="glass project-card gsap-reveal">
           <div class="project-img">
+            <div class="project-img-shine"></div>
             <i data-lucide="shopping-bag"></i>
           </div>
           <div class="project-info">
             <h3>E-commerce for Communities</h3>
             <p>A location-based digital platform connecting local institutions and businesses with their target local
-              audience.</p>
+              audience — built for scale and simplicity.</p>
             <div class="tech-tags">
               <span class="tech-tag">UI/UX</span>
               <span class="tech-tag">Web Dev</span>
+              <span class="tech-tag">Location API</span>
             </div>
           </div>
         </div>
 
-        <!-- Project 2 -->
-        <div class="glass project-card gsap-reveal animate-float-delay">
+        <div class="glass project-card gsap-reveal">
           <div class="project-img">
+            <div class="project-img-shine"></div>
             <i data-lucide="users"></i>
           </div>
           <div class="project-info">
             <h3>Employee Management System</h3>
-            <p>A comprehensive system supporting full CRUD operations, complex queries, and an intricately designed
-              database schema.</p>
+            <p>Comprehensive system with full CRUD operations, complex DB queries, JWT authentication, and an
+              intricately designed relational schema.</p>
             <div class="tech-tags">
               <span class="tech-tag">Java</span>
+              <span class="tech-tag">Spring Boot</span>
               <span class="tech-tag">Hibernate</span>
               <span class="tech-tag">PostgreSQL</span>
             </div>
@@ -282,43 +299,33 @@
     </div>
   </section>
 
-  <!-- Education Section -->
+  <!-- ═══════════════ EDUCATION ═══════════════ -->
   <section id="education">
     <div class="container">
-      <h2 class="gsap-reveal">Education & Courses</h2>
-      <div class="about-grid">
+      <h2 class="section-title gsap-reveal">Education &amp; Certifications</h2>
+      <div class="edu-grid">
 
-        <!-- Academics -->
-        <div class="glass about-card gsap-reveal">
-          <h3 style="margin-bottom: 1rem;"><i data-lucide="graduation-cap" style="vertical-align: middle;"></i>
-            Academics</h3>
-
-          <div style="margin-bottom: 1.5rem;">
-            <p style="color: var(--text-main); font-weight: 600; font-size: 1.1rem;">Bachelor of Engineering</p>
-            <p style="color: var(--accent-1); font-size: 0.9rem;">Electronics & Telecommunication</p>
-            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.2rem;">Bharati Vidyapeeth College of
-              Engineering, Navi Mumbai</p>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">CGPA: 7.43</p>
+        <div class="glass edu-card gsap-reveal">
+          <h3><i data-lucide="graduation-cap" style="width:14px;height:14px;"></i> Academics</h3>
+          <div class="edu-entry">
+            <div class="edu-degree">Bachelor of Engineering</div>
+            <div class="edu-field">Electronics &amp; Telecommunication</div>
+            <div class="edu-place">Bharati Vidyapeeth College of Engineering, Navi Mumbai</div>
+            <div class="edu-score">CGPA: 7.43</div>
           </div>
-
-          <div>
-            <p style="color: var(--text-main); font-weight: 600; font-size: 1.1rem;">Diploma in E&TC</p>
-            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.2rem;">Shivajirao S. Jondhle
-              Polytechnic</p>
-            <p style="color: var(--text-muted); font-size: 0.9rem;">Percentage: 85.35%</p>
+          <div class="edu-entry">
+            <div class="edu-degree">Diploma in E&amp;TC</div>
+            <div class="edu-place">Shivajirao S. Jondhle Polytechnic</div>
+            <div class="edu-score">85.35%</div>
           </div>
         </div>
 
-        <!-- Courses -->
-        <div class="glass about-card gsap-reveal">
-          <h3 style="margin-bottom: 1rem;"><i data-lucide="award" style="vertical-align: middle;"></i> Certifications
-          </h3>
-
-          <div>
-            <p style="color: var(--text-main); font-weight: 600; font-size: 1.1rem;">Java Full Stack Development</p>
-            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.2rem;">Q-Spiders / J-Spiders, Navi
-              Mumbai</p>
-            <ul style="color: var(--text-muted); margin-left: 1.2rem; font-size: 0.9rem; margin-top: 0.8rem;">
+        <div class="glass edu-card gsap-reveal">
+          <h3><i data-lucide="award" style="width:14px;height:14px;"></i> Certifications</h3>
+          <div class="edu-entry">
+            <div class="edu-degree">Java Full Stack Development</div>
+            <div class="edu-field">Q-Spiders / J-Spiders, Navi Mumbai</div>
+            <ul class="focus-list" style="margin-top:0.8rem;">
               <li>Advanced Java Programming</li>
               <li>Web Development Frameworks</li>
               <li>Database Management Architecture</li>
@@ -330,49 +337,43 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- ═══════════════ CONTACT ═══════════════ -->
   <section id="contact">
     <div class="container">
-      <h2 class="gsap-reveal">Get In Touch</h2>
+      <h2 class="section-title gsap-reveal">Get In Touch</h2>
       <div class="contact-container gsap-reveal">
 
-        <div class="glass contact-info about-card">
-          <h3 style="color: var(--text-main);">Let's Build Together</h3>
-          <p style="color: var(--text-muted);">I'm always open to discussing robust backend architectures, application
-            development, or new tech opportunities.</p>
+        <div class="glass contact-info">
+          <h3>Let's Build Something Great</h3>
+          <p class="desc">Open to discussing backend architecture, enterprise development, or exciting new
+            opportunities. Drop a message — I respond fast.</p>
 
-          <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 1rem;">
-            <div class="contact-item">
-              <i data-lucide="mail"></i>
-              <span>animeshc2002@gmail.com</span>
-            </div>
-            <div class="contact-item">
-              <i data-lucide="phone"></i>
-              <span>+91 9769957275</span>
-            </div>
-            <div class="contact-item">
-              <i data-lucide="map-pin"></i>
-              <span>Bhubaneswar, India</span>
-            </div>
+          <div class="contact-item">
+            <div class="icon-wrap"><i data-lucide="mail" style="width:16px;height:16px;"></i></div>
+            <span>animeshc2002@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <div class="icon-wrap"><i data-lucide="phone" style="width:16px;height:16px;"></i></div>
+            <span>+91 97699 57275</span>
+          </div>
+          <div class="contact-item">
+            <div class="icon-wrap"><i data-lucide="map-pin" style="width:16px;height:16px;"></i></div>
+            <span>Bhubaneswar, India</span>
           </div>
 
-          <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1rem;">
-            <!-- Social Buttons (Raw SVG for guaranteed rendering) -->
-            <a href="https://github.com/Animesh1105" target="_blank" class="btn btn-outline"
-              style="width: 50px; height: 50px; border-radius: 50%; padding: 0; display: inline-flex; justify-content: center; align-items: center;"
-              aria-label="GitHub">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <div class="social-links">
+            <a href="https://github.com/Animesh1105" target="_blank" class="social-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <path
                   d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3-.3 6-1.5 6-6.5a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 5 3 6.2 6 6.5a4.8 4.8 0 0 0-1 3.2v4" />
                 <path d="M9 18c-4.5 1.5-5-2.5-7-3" />
               </svg>
             </a>
-            <a href="https://www.linkedin.com/in/animesh-chauhan-560b95259" target="_blank" class="btn btn-outline"
-              style="width: 50px; height: 50px; border-radius: 50%; padding: 0; display: inline-flex; justify-content: center; align-items: center;"
+            <a href="https://www.linkedin.com/in/animesh-chauhan-560b95259" target="_blank" class="social-btn"
               aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                 <rect width="4" height="12" x="2" y="9" />
                 <circle cx="4" cy="4" r="2" />
@@ -381,25 +382,28 @@
           </div>
         </div>
 
-        <div class="glass about-card">
-          <!-- Web3Forms Integration -->
+        <div class="glass contact-form-card">
           <form id="contact-form">
-            <!-- Replace 'YOUR_ACCESS_KEY_HERE' with your free key from https://web3forms.com/ -->
             <input type="hidden" name="access_key" value="8e42b9aa-5df9-49aa-96e5-4be310184157">
             <input type="hidden" name="subject" value="New Portfolio Message from Animesh Chauhan Website!">
-            <input type="checkbox" name="botcheck" style="display: none;">
+            <input type="checkbox" name="botcheck" style="display:none;">
 
             <div class="input-group">
-              <input type="text" name="name" placeholder="Your Name" required>
+              <label for="inp-name">Full Name</label>
+              <input type="text" id="inp-name" name="name" placeholder="John Doe" required>
             </div>
             <div class="input-group">
-              <input type="email" name="email" placeholder="Your Email" required>
+              <label for="inp-email">Email Address</label>
+              <input type="email" id="inp-email" name="email" placeholder="john@example.com" required>
             </div>
             <div class="input-group">
-              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+              <label for="inp-msg">Message</label>
+              <textarea id="inp-msg" name="message" rows="5" placeholder="Tell me about your project..."
+                required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
-            <p id="form-result" style="margin-top: 1rem; font-weight: 500; font-size: 0.95rem;"></p>
+            <button type="submit" class="btn btn-primary" id="submit-btn" style="width:100%;border-radius:12px;">Send
+              Message</button>
+            <p id="form-result" style="margin-top:0.75rem;font-weight:500;font-size:0.9rem;text-align:center;"></p>
           </form>
         </div>
 
@@ -407,18 +411,14 @@
     </div>
   </section>
 
-  <footer
-    style="text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border-color); background: var(--bg-surface);">
-    <p>&copy; 2026 Animesh Chauhan. Built with precision.</p>
+  <footer>
+    <p>&copy; 2026 <span>Animesh Chauhan</span>. Designed &amp; Built with precision.</p>
   </footer>
 
   <!-- Scripts -->
-  <!-- GSAP & ScrollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  <!-- Custom Script -->
   <script src="script.js"></script>
 </body>
 
